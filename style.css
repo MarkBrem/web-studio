@@ -104,8 +104,18 @@
 
     .contacts-list {
         display: flex;
+        align-items: center;
 
         margin-left: auto;
+    }
+
+    .contacts-icon{
+        fill: #757575;
+    }
+
+    .contacts-icon:hover,
+    .contacts-icon:focus{
+        fill:#2196F3;
     }
 
     .nav-link,
@@ -130,7 +140,7 @@
     .nav-link:hover,
     .nav-link:focus,
     .contacts-link:hover,
-    .contacts-link:focus {
+    .contacts-link:focus{
         color: var(--accent-color);
     }
 
