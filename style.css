@@ -148,7 +148,9 @@
     .hero {
         padding-top: 200px;
         padding-bottom: 200px;
-        background:url(./зображення/Img\ Overlay.png), rgba(47, 48, 58, 0.4);
+        background: url(./зображення/Overlay.png), rgba(47, 48, 58, 0.4);
+        background-repeat: no-repeat;
+        background-size: 100% ;
     }
 
     .hero .container {
@@ -260,6 +262,7 @@
     .advantages .title {
         font-weight: 700;
         text-transform: uppercase;
+        margin-top: 55px;
 
         margin-bottom: 10px;
     }
@@ -280,6 +283,33 @@
     .what-we-do {
         display: flex;
         justify-content: space-between;
+    }
+
+    .what-we-do-list{
+        position: relative;
+    }
+
+    .position-text{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        padding-top: 27px;
+        padding-bottom: 27px;
+        padding-left: 107px;
+        padding-right: 107px;
+
+        background-color: rgba(47, 48, 58, 0.80);
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
     }
 
     .what-we-do img {
@@ -341,6 +371,7 @@
  .members-list{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: #FFF;
     margin: 15px; 
     padding-bottom: 30px; 
 } 
@@ -354,7 +385,7 @@
         margin: 15px;
     }
 
-    .section.our-teame{
+    .section.our-team{
         background-color: #F5F4FA; 
     } 
 
