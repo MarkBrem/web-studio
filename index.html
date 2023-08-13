@@ -28,7 +28,7 @@
             <!-- Навігація по сайту -->
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="/index.html">Студія</a>
+                    <a href="/index.html" class="nav-link">Студія</a>
                 </li>
                 <li class="nav-item">
                     <a href="./portfolio.html" class="nav-link">Портфоліо</a>
@@ -59,10 +59,10 @@
     </header>
     <main>
         <!-- модальне вікно  -->
-        <div class="backdrop">
+        <div class="backdrop is-hidden" data-backdrop>
             <div class="modal">
                 <form class="form">
-                    <button class="cross-btn">
+                    <button class="cross-btn" data-close-modal>
                         <svg class="cross">
                             <use href="./зображення/symbol-defs.svg#icon-cross"></use>
                         </svg>
@@ -102,7 +102,7 @@
         <section class="hero section">
            <div class="container">
             <h1 >Ефективні рішення для вашого бізнесу</h2>
-                <button class="hero-button" type="button">Замовити послугу</button>
+                <button class="hero-button" type="button" data-open-modal>Замовити послугу</button>
            </div>
         </section>
         <!-- переваги -->
@@ -305,5 +305,25 @@
             </ul>
          </div>
     </footer>  
+    <script>
+            const refs = {
+                openModalBtn: document.querySelector("[data-open-modal]"),
+                closeModalBtn: document.querySelector("[data-close-modal]"),
+                backdrop: document.querySelector("[data-backdrop]"),
+            };
+    
+            refs.openModalBtn.addEventListener("click", toggleModal);
+            refs.closeModalBtn.addEventListener("click", toggleModal);
+    
+            refs.backdrop.addEventListener("click", logBackdropClick);
+    
+            function toggleModal() {
+                refs.backdrop.classList.toggle("is-hidden");
+            }
+    
+            function logBackdropClick() {
+                console.log("Это клик в бекдроп");
+            }
+        </script>
 </body>
 </html>

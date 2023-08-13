@@ -127,10 +127,34 @@
     }
 
     .nav-link {
+        position: relative;
         color: var(--primary-text-color);
 
         padding-top: 32px;
         padding-bottom: 32px;
+    }
+
+    .nav-link::after{
+        content: '';
+        position: absolute;
+        
+            left: 0;
+            bottom: 0;
+        
+            display: block;
+            border-radius: 2px;
+            background: #2196F3;
+            height: 4px;
+            width: 100%;
+            opacity: 0;
+            transform: scaleX(0);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav-link:hover::after{
+        opacity: 1;
+        transform: scaleX(1);
     }
 
     .contacts-link {
@@ -510,6 +534,13 @@
         }
 
         .job-title{
+            color: #212121;
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: 1.08px;
             margin-bottom: 4px;
         }
 
@@ -522,6 +553,7 @@
 
         .opacity-container{
             position: relative;
+            overflow: hidden;
         }
 
         .opacity-text{
@@ -537,8 +569,6 @@
             padding-left: 24px;
             padding-right: 24px;
 
-            opacity: 0;
-
             color: #FFF;
             font-family: Roboto;
             font-size: 18px;
@@ -548,11 +578,14 @@
             letter-spacing: 0.54px;
 
             background: rgba(33, 150, 243, 0.90);
+
+            transform: translateY(130%);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         .opacity-container:hover .opacity-text,
         .opacity-container:focus .opacity-text{
-            opacity: 1;
+            transform: translateY(0);
         }
 
         .button-list{
@@ -608,6 +641,11 @@
    height: 100%;
    top: 0;
    left: 0;
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal{
