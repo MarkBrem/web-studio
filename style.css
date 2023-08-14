@@ -544,6 +544,17 @@
             margin-bottom: 4px;
         }
 
+        .job-text{
+            color: #757575;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                /* 187.5% */
+                letter-spacing: 0.48px;
+        }
+
         .container-foto{
             /* padding-left: 24px;
             padding-right: 24px; */
