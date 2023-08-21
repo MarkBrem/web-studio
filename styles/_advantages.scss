@@ -1,0 +1,85 @@
+.advantages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages .item {
+    width: 270px;
+}
+
+.item.antenna::before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-image: url(./зображення/antenna\ 1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item.clock::before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-image: url(./зображення/clock\ 1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item.diagram::before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-image: url(./зображення/diagram\ 1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item.astronaut::before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-image: url(./зображення/Group.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.advantages .title,
+.advantages .text {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.advantages .title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 55px;
+
+    margin-bottom: 10px;
+}
+
+.advantages .text {
+    font-weight: 400;
+
+    color: var(--secondary-text-color);
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 50px;
+}

@@ -1,0 +1,36 @@
+.what-we-do {
+    display: flex;
+    justify-content: space-between;
+}
+
+.what-we-do-list {
+    position: relative;
+}
+
+.position-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 107px;
+    padding-right: 107px;
+
+    background-color: rgba(47, 48, 58, 0.80);
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.what-we-do img {
+    width: 370px;
+    height: 294px;
+}

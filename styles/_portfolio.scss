@@ -1,0 +1,119 @@
+.foto-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.foto-items {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+    border: 1px solid #EEEEEE;
+    width: 370px;
+}
+
+.job-title {
+    color: #212121;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.08px;
+    margin-bottom: 4px;
+}
+
+.job-text {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 187.5% */
+    letter-spacing: 0.48px;
+}
+
+.container-foto {
+    /* padding-left: 24px;
+            padding-right: 24px; */
+    /* padding: 20px 24px; */
+    padding: 20px 24px 20px 24px;
+}
+
+.opacity-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.opacity-text {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+
+    background: rgba(33, 150, 243, 0.90);
+
+    transform: translateY(130%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.opacity-container:hover .opacity-text,
+.opacity-container:focus .opacity-text {
+    transform: translateY(0);
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    width: calc((100% - 10px * 8) / 5);
+
+
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: -8px;
+}
+
+.button-items {
+    margin: 8px;
+
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    border: none;
+    padding: 6px 22px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}

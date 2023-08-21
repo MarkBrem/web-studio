@@ -1,0 +1,99 @@
+.section-photos {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #f5f4fa;
+    fill: Solid #ffffff;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.job {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+/* .posision {
+        box-shadow: #000;
+        display: flex;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        background-color: #ffffff;
+        padding: 0;
+        height: 90px;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        color: var(--secondary-text-color);
+     }   */
+
+.members-list {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFF;
+    margin: 15px;
+    padding-bottom: 30px;
+}
+
+.members {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.section.our-team {
+    background-color: #F5F4FA;
+}
+
+.network-icon {
+    fill: currentColor;
+}
+
+.svg-link {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
+}
+
+.svg-link:hover,
+.svg-link:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    color: var(--background-color);
+}
+
+.svg-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.members-img {
+    width: 270px;
+    margin-bottom: 30px;
+}
