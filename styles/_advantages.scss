@@ -1,10 +1,29 @@
 .advantages {
-    display: flex;
-    justify-content: space-between;
-}
+    @include flexContainer(space-between);
 
-.advantages .item {
-    width: 270px;
+    .title,
+    .text {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+    .title {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 55px;
+
+        margin-bottom: 10px;
+    }
+
+    .text {
+        font-weight: 400;
+
+        color: $SecondaryTextColor;
+    }
+
+    .item {
+        width: 270px;
+    }
 }
 
 .item.antenna::before {
@@ -14,7 +33,7 @@
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
-    background-image: url(./зображення/antenna\ 1.png);
+    background-image: url(../зображення/antenna\ 1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -27,7 +46,7 @@
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
-    background-image: url(./зображення/clock\ 1.png);
+    background-image: url(../зображення/clock\ 1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -40,7 +59,7 @@
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
-    background-image: url(./зображення/diagram\ 1.png);
+    background-image: url(../зображення/diagram\ 1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -53,30 +72,10 @@
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
-    background-image: url(./зображення/Group.png);
+    background-image: url(../зображення/Group.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-.advantages .title,
-.advantages .text {
-    font-size: 14px;
-    line-height: 16px;
-}
-
-.advantages .title {
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 55px;
-
-    margin-bottom: 10px;
-}
-
-.advantages .text {
-    font-weight: 400;
-
-    color: var(--secondary-text-color);
 }
 
 .section-title {

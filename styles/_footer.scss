@@ -1,9 +1,9 @@
 .footer {
-    background-color: var(--hero-background-color);
+    background-color: $HeroBackgroundColor;
 }
 
 .footer .logo>span {
-    color: var(--background-color);
+    color: $BackgroundColor;
 }
 
 address {
@@ -11,7 +11,7 @@ address {
     font-size: 14px;
     line-height: 24px;
 
-    color: var(--background-color);
+    color: $BackgroundColor;
 }
 
 .footer .contacts-list {

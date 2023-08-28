@@ -21,23 +21,23 @@
 .client-items {
     border-radius: 4px;
     border: 1px solid #AFB1B8;
+
+    &:focus,
+    &:hover {
+            border-color: #2196F3;
+        }
+
+    a {
+            color: #AFB1B8;
+            padding: 16px 32px;
+        }
+
+    a:focus,
+    a:hover {
+            color: #2196F3;
+        }
 }
 
 .client-svg {
     fill: currentColor;
-}
-
-.client-items a {
-    color: #AFB1B8;
-    padding: 16px 32px;
-}
-
-.client-items a:focus,
-.client-items a:hover {
-    color: #2196F3;
-}
-
-.client-items:focus,
-.client-items:hover {
-    border-color: #2196F3;
 }

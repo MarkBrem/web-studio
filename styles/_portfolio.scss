@@ -79,10 +79,8 @@
 
 .button-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: calc((100% - 10px * 8) / 5);
-
-
 }
 
 .container-button {

@@ -6,8 +6,7 @@
 }
 
 .photos {
-    display: flex;
-    justify-content: space-evenly;
+    @include flexContainer(space-evenly);
     padding: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -24,27 +23,9 @@
 }
 
 .job {
-    display: flex;
-    justify-content: center;
+    @include flexContainer(center);
     padding-bottom: 30px;
 }
-
-/* .posision {
-        box-shadow: #000;
-        display: flex;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        background-color: #ffffff;
-        padding: 0;
-        height: 90px;
-        text-align: center;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        color: var(--secondary-text-color);
-     }   */
 
 .members-list {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -55,15 +36,15 @@
 }
 
 .members {
-    display: flex;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
+    @include flexContainer(center);
     align-items: center;
     margin: 15px;
 }
 
-.section.our-team {
+.our-team {
+    @extend .section;
     background-color: #F5F4FA;
 }
 
@@ -78,18 +59,17 @@
     justify-content: center;
     align-items: center;
     color: #AFB1B8;
-}
 
-.svg-link:hover,
-.svg-link:focus {
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    color: var(--background-color);
+    &:hover,
+    &:focus{
+        background-color: $Accentcolor;
+        border-radius: 50%;
+        color: $BackgroundColor;
+    }
 }
 
 .svg-list {
-    display: flex;
-    justify-content: center;
+    @include flexContainer(center);
     gap: 10px;
 }
 

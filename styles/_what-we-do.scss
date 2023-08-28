@@ -1,6 +1,11 @@
 .what-we-do {
-    display: flex;
-    justify-content: space-between;
+    @include flexContainer(space-between);
+    // display: flex;
+    // justify-content: space-between;
+    img {
+            width: 370px;
+            height: 294px;
+        }
 }
 
 .what-we-do-list {
@@ -28,9 +33,4 @@
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-}
-
-.what-we-do img {
-    width: 370px;
-    height: 294px;
 }

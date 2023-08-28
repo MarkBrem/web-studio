@@ -1,16 +1,15 @@
-.container.header {
-    display: flex;
-    justify-content: center;
+.header {
+    @extend .container;
+    @include flexContainer(center);
     align-items: center;
 
     padding-top: 24px;
     padding-bottom: 25px;
-}
 
-.header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    nav {
+        @include flexContainer(center);
+            align-items: center;
+        }
 }
 
 .logo {
@@ -19,11 +18,11 @@
     font-size: 26px;
     line-height: 31px;
 
-    color: var(--accent-color);
-}
+    color: $Accentcolor;
 
-.logo>span {
-    color: var(--logo-color);
+    span {
+            color: $LogoColor;
+        }
 }
 
 .nav-list {
@@ -63,10 +62,13 @@
 
 .nav-link {
     position: relative;
-    color: var(--primary-text-color);
+    color: $PrimaryTextColor;
 
     padding-top: 32px;
     padding-bottom: 32px;
+
+    &:hover,
+    &:focus{color: $Accentcolor}
 }
 
 .nav-link::after {
@@ -93,12 +95,10 @@
 }
 
 .contacts-link {
-    color: var(--secondary-text-color);
-}
+    color: $SecondaryTextColor;
 
-.nav-link:hover,
-.nav-link:focus,
-.contacts-link:hover,
-.contacts-link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus{
+        color: $Accentcolor
+    }
 }
