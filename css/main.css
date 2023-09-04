@@ -74,6 +74,16 @@ li {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 480px) {
+  .header {
+    background-color: red;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header {
+    border: black 1px solid;
+  }
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
