@@ -1,5 +1,13 @@
 .advantages {
-    @include flexContainer(space-between);
+    @media  screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        @include flexContainer(space-between);
+    }
 
     .title,
     .text {
@@ -13,6 +21,9 @@
         margin-top: 55px;
 
         margin-bottom: 10px;
+        @media screen and (max-width: $mobile) {
+            text-align: center;
+        }
     }
 
     .text {
@@ -22,7 +33,21 @@
     }
 
     .item {
+
+        @media screen and (min-width: $mobile) {
+                width: 450px;
+                &:not(:last-child) {
+                        margin-bottom: 30px;
+                    }
+            }
+        @media  screen and (min-width: $tablet) {
+            margin: 15px;
+            width: calc((100% - 30px * 2) / 2);
+        }
+       @media screen and (min-width: $desktop) {
         width: 270px;
+       }
+
     }
 }
 

@@ -14,12 +14,19 @@
 }
 
 .container {
-    /* outline: solid 3px red; */
-
-    width: 1200px;
+    outline: solid 3px red; 
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 1440px;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
 }
