@@ -292,7 +292,6 @@ h1 {
 .item.antenna::before {
   content: "";
   display: block;
-  width: 270px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -301,11 +300,15 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 480px) {
+  .item.antenna::before {
+    width: 450px;
+  }
+}
 
 .item.clock::before {
   content: "";
   display: block;
-  width: 270px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -314,11 +317,15 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 480px) {
+  .item.clock::before {
+    width: 450px;
+  }
+}
 
 .item.diagram::before {
   content: "";
   display: block;
-  width: 270px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -327,11 +334,15 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 480px) {
+  .item.diagram::before {
+    width: 450px;
+  }
+}
 
 .item.astronaut::before {
   content: "";
   display: block;
-  width: 270px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -339,6 +350,11 @@ h1 {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .item.astronaut::before {
+    width: 450px;
+  }
 }
 
 .section-title {
