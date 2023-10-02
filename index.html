@@ -21,9 +21,19 @@
 <body>    
     <header>
     <div class="container header">
+        <a href="./" class="logo">Wed<span>Studio</span></a>
+        <button class="menu-button"  data-menu-button>
+            <svg class="menu">
+                <use href="./зображення/symbol-defs.svg#menu" class="open-icon">
+                </use>
+                <use href="./зображення/symbol-defs.svg#icon-cross" class="close-icon">
+                </use>
+            </svg>
+        </button> 
+        <div class="mobile-menu"data-menu>
         <nav>
-            <a href="./" class="logo">Wed<span>Studio</span></a>
-            <!-- Навігація по сайту -->
+           <div>
+           </div>
             <ul class="nav-list">
                 <li class="nav-item">
                     <a href="/index.html" class="nav-link">Студія</a>
@@ -53,6 +63,7 @@
                     +38 096 111 11 11</a>
             </li>
         </ul>
+        </div>
     </div>
     </header>
     <main>
@@ -149,7 +160,16 @@
             <h2 class="section-title">Наша команда</h2>
             <ul class="members">
                 <li class="members-list">
-                    <img class="members-img" src="./зображення/img (19).jpg"alt=" Учасник команди">
+                    <img class="members-img" 
+                    srcset="
+                        ./зображення/demianenko1x.jpg 1x,
+                        ./зображення/demianenko2x.jpg 2x,
+                        ./зображення/demianenko3x.jpg 3x
+                    "
+                    src="./зображення/demianenko2x.jpg"
+                    alt=" Учасник команди"
+                    
+                    sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px,">
                     <h3 class="name">Ігор Дем'яненко</h3>
                     <p class="job">Product Designer</p>
                     <ul class="svg-list">
@@ -180,7 +200,8 @@
                     </ul>
                 </li>
                 <li class="members-list">
-                    <img class="members-img" src="./зображення/img (20).jpg"alt="Учасник команди">
+                    <img class="members-img" src="./зображення/img (20).jpg"alt="Учасник команди" width="270"
+                    height="270">
                     <h3 class="name">Ольга Рєпіна</h3>
                     <p class="job">Frontend Developer</p>
                     <ul class="svg-list">
@@ -211,7 +232,8 @@
                     </ul>
                 </li>
                 <li class="members-list">
-                    <img class="members-img" src="./зображення/img (18).jpg" alt="Учасник команди">
+                    <img class="members-img" src="./зображення/img (18).jpg" alt="Учасник команди" width="270"
+                    height="270">
                     <h3 class="name">Микола Тарасов</h3>
                     <p class="job">Marketing</p>
                     <ul class="svg-list">
@@ -242,7 +264,8 @@
                     </ul>
                 </li>
                 <li class="members-list">
-                    <img class="members-img" src="./зображення/img (21).jpg" alt="Учасник команди">
+                    <img class="members-img" src="./зображення/img (21).jpg" alt="Учасник команди" width="270"
+                    height="270">
                     <h3 class="name">Михайло Єрмаков</h3>
                     <p class="job">UI Designer</p>
                     <ul class="svg-list">
@@ -303,25 +326,7 @@
             </ul>
          </div>
     </footer>  
-    <script>
-            const refs = {
-                openModalBtn: document.querySelector("[data-open-modal]"),
-                closeModalBtn: document.querySelector("[data-close-modal]"),
-                backdrop: document.querySelector("[data-backdrop]"),
-            };
-    
-            refs.openModalBtn.addEventListener("click", toggleModal);
-            refs.closeModalBtn.addEventListener("click", toggleModal);
-    
-            refs.backdrop.addEventListener("click", logBackdropClick);
-    
-            function toggleModal() {
-                refs.backdrop.classList.toggle("is-hidden");
-            }
-    
-            function logBackdropClick() {
-                console.log("Это клик в бекдроп");
-            }
-        </script>
+    <!-- <script src="./js/modal.js" type="module"></script> -->
+    <script src="./js/mobile-menu.js" type="module"></script>
 </body>
 </html>
