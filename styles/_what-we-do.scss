@@ -2,10 +2,17 @@
     @include flexContainer(space-between);
     // display: flex;
     // justify-content: space-between;
+
     img {
             width: 370px;
             height: 294px;
         }
+}
+
+.section.what-we-do{
+    @media screen and (max-width:1199px) {
+            display: none;
+    }
 }
 
 .what-we-do-list {

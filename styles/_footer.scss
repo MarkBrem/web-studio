@@ -2,6 +2,12 @@
     background-color: $HeroBackgroundColor;
 }
 
+.first-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .footer .logo>span {
     color: $BackgroundColor;
 }
@@ -28,4 +34,42 @@ address {
     line-height: 24px;
 
     color: rgba(255, 255, 255, 0.6);
+}
+
+.mobile-container{
+
+    @media screen and (min-width:$desktop) {
+        display: none;
+    }
+}
+
+.mobile-title{
+    color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+}
+
+.mobile-list{
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.10);
+
+    padding: 12px;
+
+    &:not(:last-child){
+        margin-right: 10px;
+    }
 }
