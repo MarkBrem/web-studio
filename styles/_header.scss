@@ -3,27 +3,33 @@
     @include flexContainer(center);
     align-items: center;
 
-    padding-top: 24px;
-    padding-bottom: 25px;
-
-    // nav {
-    //     @include flexContainer(center);
-    //         align-items: center;
-    //     }
-
-    @media screen and (min-width: 480px) {
-        background-color: red;
+    @media screen and (max-width:767px) {
+        display: flex;
+        padding-top: 16px;
+        padding-bottom: 16px;   
+        align-items: center;
     }
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-    @media screen and (max-width: 400px) {
-        border: black 1px solid;
-    }
+    nav {
+        @include flexContainer(center);
+            align-items: center;
+        } 
+
+    // @media screen and (max-width: 400px) {
+    //     border: black 1px solid;
+    // }
 }
 
 .container.header{
     position: relative;
     @media screen and (max-width: 767px) {
     justify-content: space-between; 
+    }
+
+    @media screen and (min-width:$tablet) {
+        justify-content: space-between;
     }
 }
 
@@ -40,7 +46,18 @@
         }
 }
 
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .nav-list {
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        gap: 50px;
+    }
+
     @media screen and (min-width:$desktop) {
         display: flex;
         
@@ -151,7 +168,7 @@
 
 .menu-button{
     position: absolute;
-    top: 20px;
+    top: 13px;
     right: 15px;
     width: 40px;
     height: 40px;
@@ -179,6 +196,11 @@
 }
 
 .mobile-menu{
+    @media screen and (min-width:$tablet) {
+            display: flex;
+            gap: 96px;
+        }
+
     @media screen and (max-width:767px) {
         display: none;
         flex-direction: column;

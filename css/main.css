@@ -79,24 +79,44 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .header {
-    background-color: red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
-@media screen and (max-width: 400px) {
-  .header {
-    border: black 1px solid;
-  }
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container.header, .header {
   position: relative;
 }
 @media screen and (max-width: 767px) {
+  .container.header, .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
   .container.header, .header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -115,6 +135,25 @@ img {
   color: #000;
 }
 
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .nav-list {
     display: -webkit-box;
@@ -242,7 +281,7 @@ img {
 
 .menu-button {
   position: absolute;
-  top: 20px;
+  top: 13px;
   right: 15px;
   width: 40px;
   height: 40px;
@@ -269,6 +308,14 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 96px;
+  }
+}
 @media screen and (max-width: 767px) {
   .mobile-menu {
     display: none;
@@ -314,17 +361,31 @@ img {
   text-align: center;
 }
 
-h1 {
-  width: 696px;
+.hero-title {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: #fff;
+  font-family: Roboto;
+  color: #FFF;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .hero-title {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 1.56px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero-button {
