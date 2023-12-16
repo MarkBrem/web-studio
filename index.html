@@ -48,16 +48,16 @@
             </ul>
         </nav>
         <!-- Контакти -->
-        <ul class="contacts-list">
+        <ul class="contacts-list header-list">
             <li class="contacts-item">
-                <a href="" class="contacts-link">
+                <a href="" class="contacts-link header-link">
                     <svg class="contacts-icon" width="16" height="12">
                         <use href="./зображення/symbol-defs.svg#icon-envelope"></use>
                     </svg>
                     info@devstudio.com</a>
             </li>
             <li class="contacts-item">
-                <a href="" class="contacts-link">
+                <a href="" class="contacts-link header-link">
                     <svg class="contacts-icon" width="10" height="16">
                         <use href="./зображення/symbol-defs.svg#icon-smartphone"></use>
                     </svg>
@@ -324,9 +324,7 @@
         <h2 class="client">Постійні клієнти</h2>
         <div class="container client">
         <ul class="client-list">
-            <li class="client-items"><a href=""><svg class="client-svg" width="106" height="60">
-                    <use href="./зображення/symbol-defs.svg#logo-first"></use>
-                </svg></a></li>
+            <li class="client-items"><a href=""><svg class="client-svg" width="106" height="60"><use href="./зображення/symbol-defs.svg#logo-first"></use></svg></a></li>
             <li class="client-items"><a href=""><svg class="client-svg" width="106" height="60"><use href="./зображення/symbol-defs.svg#icon-Logo"></use></svg></a></li>
             <li class="client-items"><a href=""><svg class="client-svg" width="106" height="60"><use href="./зображення/symbol-defs.svg#icon-Logo-1"></use></svg></a></li>
             <li class="client-items"><a href=""><svg class="client-svg" width="106" height="60"><use href="./зображення/symbol-defs.svg#icon-Logo-2"></use></svg></a></li>
@@ -338,20 +336,20 @@
     </main>
     <footer class="footer">      
          <div class="container footer">
+            <div class="tablet-container">
             <div class="first-container">
                  <a href="./" class="logo">Web<span>Studio</a>
             <address> м. Київ, пр-т Лесі Українки, 26</address>
             </li>
             <ul class="contacts-list">
-                <li class="contacts-item">
+                <li class="contacts-item footer-link">
                     <a href="" class="contacts-link">info@devstudio.com</a>
                 </li>
-                <li class="contacts-item">
+                <li class="contacts-item footer-link">
                     <a href="" class="contacts-link">+38 096 111 11 11</a>
                 </li>
             </ul>
             </div>
-           
             <div class="mobile-container">
                 <h2 class="mobile-title">приєднуйтесь</h2>
                 <ul class="mobile-list">
@@ -415,10 +413,32 @@
                 </svg></a></li>
             </ul>
             </div>
-            
+            </div>
+            <div class="subscribe-container">
+                <ul class="subscribe-list">
+                    <li>
+                        <h1 class="subscribe-title">Підпишіться на розсилку</h1>
+                    </li>
+                    <div class="desktop-subscribe-conatiner">
+                        <li>
+                        <input class="subscribe-input" type="email" placeholder="E-mail">
+                    </li>
+                    <li>
+                        <button class="subscribe-button" type="submit">Підписатися
+                            <svg id="subscribe-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </li>
+                    </div>
+                    
+                </ul>
+            </div>
          </div>
     </footer>  
-    <!-- <script src="./js/modal.js" type="module"></script> -->
+    <script src="./js/modal.js" type="module"></script>
     <script src="./js/mobile-menu.js" type="module"></script>
 </body>
 </html>

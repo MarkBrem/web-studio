@@ -20,18 +20,33 @@
         margin: -15px;
     }
 
+    @media screen and (min-width:$tablet) {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
     @media screen and (min-width:$desktop) {
         justify-content: space-evenly;
     }
 }
 
 .client-items {
+    display: flex;
+    justify-content: center;
     border-radius: 4px;
     border: 1px solid #AFB1B8;
     @media screen and (max-width:767px) {
         width: calc((100% - 15px * 4) / 2);
         margin: 15px;
         padding: 16px 60px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        width: 226px;
+    }
+
+    @media screen and ($desktop) {
+        width: 170px;
     }
     &:focus,
     &:hover {
